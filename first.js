@@ -106,5 +106,57 @@ let output=`the item ${obj.item} cost is ${obj.price} rupees`;
 
 console.log(output);
 
+                        //string tamplate   (string in js is immutable means after mutation it remains same )
+
+// upperCase
+
+let str01="saquib";
+
+console.log(str01.toUpperCase());
+console.log(str01);
+
+
+//lower case
+
+ let str02="ANSARI";
+
+ console.log(str02.toLowerCase());
+
+ //trim
+
+let str03="                      saquib   ansari ";
+ console.log(str03.trim());
+
+
+ // 4. slice
+
+ let str4="abcdef";
+
+ console.log(str4.slice(0,3));
+
+ //5. concate
+
+ let str5="concate";
+ console.log(str5.concat(str4));//str1 + str2 also work
+
+ //6. replace
+
+ let str06="saquib";
+
+ console.log(str06.replace("a","m"));// write value name not index number 
+
+ // 7. chatAt for index finding value
+
+ let str07="saquib";
+
+ console.log(str07.charAt(0));
+ // practice Q. take input as a user name and print it as start with @ and also at the end type the leangth of the username string
+
+let userName01=prompt("enter you name ");
+let atTheRate="@";
+let length=userName01.length;
+
+ let final=atTheRate+userName01+length;
+  console.log(final);
 
 
