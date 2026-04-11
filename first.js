@@ -152,11 +152,65 @@ let str03="                      saquib   ansari ";
  console.log(str07.charAt(0));
  // practice Q. take input as a user name and print it as start with @ and also at the end type the leangth of the username string
 
-let userName01=prompt("enter you name ");
-let atTheRate="@";
-let length=userName01.length;
+// let userName01=prompt("enter you name ");
+// let atTheRate="@";
+// let length=userName01.length;
 
- let final=atTheRate+userName01+length;
-  console.log(final);
+//  let final=atTheRate+userName01+length;
+//   console.log(final);
 
 
+                 // arrays 
+console.log(" arrays start from here :");
+let arr=[22,22,33,44,5,5,33,550,"saquib"];//syntax
+
+//console.log(arr[0]);//array indice
+
+
+// looping over an array 
+
+let looparr=[1,2,3,4,5,55];
+
+// for(let i=0; i<looparr.length;i++){// make sure that do not use <= use only < bcoz arrays's indexes start from 0th
+
+//     console.log(looparr[i]);
+// }
+
+
+// for of 
+for( let loop of looparr){
+    //  console.log(loop);
+
+}
+
+// question to find the average of the marks arr=[85,97,44,37,76,60];
+
+let stuMarks=[85,97,44,37,76,60];
+
+//average=sum of all number divide by the no. of numbers 
+
+let sum=0;
+let length=stuMarks.length;
+
+for(let i=0;i<length;i++){
+
+    sum=sum+stuMarks[i];
+    
+}
+// console.log(`the average of marks of student is ${sum/length}`);
+
+
+// question that says there are 5 item in a array which has offer of 10% after 10% discount make  list of pricee
+
+let arrPrices=[250,625,300,900,50];
+
+// for 10% discount eg- (250/100)*10 
+let discount;
+let offerPrice;
+for(let price of arrPrices){
+discount=price/10;
+offerPrice=price-discount;
+
+    
+}
+console.log(offerPrice);
