@@ -164,7 +164,8 @@ let str03="                      saquib   ansari ";
 console.log(" arrays start from here :");
 let arr=[22,22,33,44,5,5,33,550,"saquib"];//syntax
 
-//console.log(arr[0]);//array indice
+//for(let price of arrPrices){
+console.log(arr[0]);//array indice
 
 
 // looping over an array 
@@ -202,15 +203,52 @@ for(let i=0;i<length;i++){
 
 // question that says there are 5 item in a array which has offer of 10% after 10% discount make  list of pricee
 
-let arrPrices=[250,625,300,900,50];
+let arrPrices=[250,645,300,900,50];
 
 // for 10% discount eg- (250/100)*10 
 let discount;
 let offerPrice;
-for(let price of arrPrices){
-discount=price/10;
-offerPrice=price-discount;
+for(let i =0;i<arrPrices.length ;i++){
 
-    
+discount=arrPrices[i]/10;
+arrPrices[i]=arrPrices[i]-discount;
+
 }
-console.log(offerPrice);
+//console.log(arrPrices);
+
+let foodItems=["chips","mango","lichi","pizza"];
+
+console.log(foodItems);
+
+foodItems.push("burger");
+ console.log(foodItems);
+ //pop se delete from thee end and return 
+ // toSting se convert hoda from array to sting 
+ //concat()se joint hoga
+ //unshit()add to start hoga
+ // shit()delete from the start
+// slice(strIndx,endIndx) // it doesn't change original array 
+//splice(strIndx,deleteCount,addElement) // change original array 
+let spliceMethod=[2,3,4,5,6,7,8,9];
+
+let ch=spliceMethod.splice(2,3,2,11,10);
+
+console.log(ch);
+console.log(spliceMethod);
+
+ // bss 
+ // question
+ let company =["bloomberg","Microsoft","Uber","Google","IBM","Netflix"];
+
+ //(a). remove the first company from the array 
+let a= company.shift(1);
+ console.log(a);
+ console.log(company);
+
+//b. remove uber and ola from its place
+
+company.splice(1,1,"ola");
+//c. add amazone at the end 
+
+company.push("amazon");
+ console.log(company);
