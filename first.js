@@ -86,7 +86,7 @@
 // }
 // console.log(" Congradulation ! you have guess the right number ");
 
-
+/*
 let str="mssaqui";
 
 console.log(str);
@@ -252,3 +252,79 @@ company.splice(1,1,"ola");
 
 company.push("amazon");
  console.log(company);
+
+ console.log("array ends here !00");*/
+
+            // functions and methods 
+function sum(x,y){
+    s=x+y;
+    return s;
+
+}
+let ad = sum(4,5);
+console.log(ad);
+
+// arrow funcion 
+
+const arrowFunction=(x,y)=>{
+return x+y;
+
+}
+
+let jod= arrowFunction(2,200);
+console.log(jod);
+//Q take sting and return no. of vowels by using function by function key word
+
+function namee(a){
+let count=0;
+
+    for(let i = 0; i<a.length;i++){
+
+    if(a[i]=="a"|| a[i]=="e" ||a[i]=="i" || a[i]=="o" || a[i]=="u"){
+count++;
+
+    }
+    
+    }
+    return count;
+}
+
+let vowel=namee("saquib");
+
+//console.log(vowel);
+
+
+
+// same question by arrowFunction
+
+let f=(b)=>{
+    let count=0;
+
+ for(let i =0; i<b.length;i++){
+        if(b[i]=="a"|| 
+            b[i]=="e" ||
+            b[i]=="i" || 
+            b[i]=="o" ||
+            b[i]=="u"){
+            count++;
+        }
+    }
+    return count;
+
+};
+
+
+// Q FROM  a given array pritn the square of each element by forEach
+
+let arr=[2,4,5,6,7];
+
+arr.forEach((val,i)=>{
+console.log(val**2,i)
+
+})
+
+
+// map same as forEach it just gives new array 
+//filer same but filter as per our demand 
+//reduce where we want one value like finding 
+console.log("functions ends here");
