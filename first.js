@@ -328,3 +328,57 @@ console.log(val**2,i)
 //filer same but filter as per our demand 
 //reduce where we want one value like finding 
 console.log("functions ends here");
+
+let heading=document.getElementById("heading1");
+
+console.dir(heading);
+
+let classes=document.getElementsByClassName("cl1");
+console.dir(classes);
+
+
+let para=document.getElementsByTagName("p");
+
+console.dir(para);
+
+//special method which work on everyone 
+
+let element=document.querySelector("p")//(".class")//("#id");
+                                //All -> for all 
+//some more
+
+/*.tagName - show the tag type
+.innerText  -show the inner text
+.innerHtml  -show the text as well as html tags
+.textContent -show the hidden text */
+
+let text=document.querySelector("h1");
+
+console.dir(text.innerText);
+
+text.innerText=text.innerText+" apna college";
+
+let boxes=document.querySelectorAll(".box");
+
+boxes[0].innerText="this is first change";
+boxes[1].innerText="this is second change";
+boxes[2].innerText="this is third change";
+
+
+// insert element
+
+let newBtn=document.createElement("button");
+
+console.log(newBtn);
+
+newBtn.innerText="click me";
+
+newBtn.style.color="blue";
+console.log(newBtn);
+
+
+
+let div=document.querySelector("div");
+
+div.append(newBtn);
+
