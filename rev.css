@@ -1,1 +1,13 @@
-    
+    div{
+        height: 200px;
+        width: 200px;
+        border: 1px;
+        border-color:green;
+        
+        color:blue;
+        background-color:antiquewhite
+
+       
+        
+
+    }

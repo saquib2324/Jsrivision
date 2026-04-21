@@ -1,32 +1,45 @@
-// let newBtn=document.createElement("button");
-// let show=newBtn.innerText="click me ";
-// console.log(show);
+let hower=document.querySelector("div");
+
+// hower.onmouseover=(e)=>{
+ 
+//     console.log("this  box is howered by the mouse : ")
+//       console.log(e);
+//     console.log(e.type);
+
+    
+    
+    
+//      console.log(e.clientX, e.clientY);
+// }
+// hower.addEventListener("mouseover",()=>{
+
+// console.log("this is listenere fun actiavted : ")
+
+// });
+
+// hower.addEventListener("mouseover",()=>{
+
+// console.log("this is listenere fun actiavted :2nd time ")
+
+// });
+let btn1=document.querySelector("#btn");
+
+let color="white";
+
+btn1.addEventListener("click",()=>{
+
+if(color==="white"){
+    console.log("this is white mode ");
+ color="dark";
+  document.querySelector("body").style.backgroundColor="white";
+ 
 
 
+}else{
+    console.log("this is dark mode ");
+ color="white";
+  document.querySelector("body").style.backgroundColor="black";
+}
 
 
-
-// let acc=document.querySelector("div");
-
-// acc.append(newBtn);
-
-// acc.prepend(newBtn);
-// acc.before(newBtn);
-// acc.after(newBtn);
-
-// let ref=document.querySelector("h2");
-
-
-// ref.remove();
-
-let newBtn=document.createElement("button");
-newBtn.style.backgroundColor="red";
-newBtn.style.color="white";
-newBtn.innerText="click me !";
-
-
-console.log(newBtn);
-
-let show=document.querySelector("body");
-
-show.prepend(newBtn);
+});
